@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+      
 jobs:
 
   build:
@@ -21,22 +21,4 @@ jobs:
     - name: Build
       run: go build -v main.go fizzbuzz.go config.go
     
-  release:
-    name: Release on GitHub
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v1
 
-      - name: Validates GO releaser config
-        uses: docker://goreleaser/goreleaser:latest
-        with:
-          args: check
-
-      - name: Create release on GitHub
-        uses: docker://goreleaser/goreleaser:latest
-        with:
-          args: release
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          
