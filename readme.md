@@ -39,6 +39,9 @@ $ cd FizzBuzz
 $ go run main.go fizzbuzz.go config.go
 
 $ go build main.go fizzbuzz.go config.go
+
+$ go test -v main.go fizzbuzz.go config.go fizzbuzz_test.go
+
 ```
 
 ## Endpoints
