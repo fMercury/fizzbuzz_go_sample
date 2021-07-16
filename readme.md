@@ -32,7 +32,7 @@ Next, the scripts to start the general project locally.
 
 Clone the project
 ```
-$ git clone https://github.com/fMercury/
+$ git clone https://github.com/fMercury/fizzbuzz_go_sample.git
 
 $ cd FizzBuzz
 
