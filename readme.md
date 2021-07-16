@@ -57,7 +57,7 @@ $ go build main.go fizzbuzz.go config.go
 
 **sample local call**
 ```
-http://localhost:8010/fizzbuzz?int1=3&int2=5&limit=20&str1=d&str2=AA
+http://localhost:8010/fizzbuzz?int1=3&int2=5&limit=20&str1=fizz&str2=buzz
 ```
 
 ### GET /statistics
